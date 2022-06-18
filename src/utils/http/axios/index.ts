@@ -17,3 +17,8 @@ export const sendRequest = async (
 
   return data.data
 }
+
+export const localHTTP = axios.create({
+  baseURL: '/data',
+  timeout: 1000,
+})

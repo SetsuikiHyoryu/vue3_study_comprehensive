@@ -20,6 +20,6 @@ const emit = defineEmits<Emits>()
 button {
   padding: 0.3rem 1rem;
   font-size: 1.3rem;
-  width: 13rem;
+  min-width: 13rem;
 }
 </style>

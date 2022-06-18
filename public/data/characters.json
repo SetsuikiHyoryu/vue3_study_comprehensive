@@ -1,0 +1,41 @@
+[
+  {
+    "name": "铃兰",
+    "birthday": "10月09日",
+    "height": 137,
+    "birthplace": "东国",
+    "race": "沃尔珀"
+  },
+
+  {
+    "name": "巫恋",
+    "birthday": "10月29日",
+    "height": 138,
+    "birthplace": "叙拉古",
+    "race": "沃尔珀"
+  },
+
+  {
+    "name": "泡普卡",
+    "birthday": "07月02日",
+    "height": 144,
+    "birthplace": "雷姆必拓",
+    "race": "卡特斯"
+  },
+
+  {
+    "name": "四月",
+    "birthday": "01月27日",
+    "height": 157,
+    "birthplace": "雷姆必拓",
+    "race": "卡特斯"
+  },
+
+  {
+    "name": "蜜莓",
+    "birthday": "03月20日",
+    "height": 155,
+    "birthplace": "雷姆必拓",
+    "race": "札拉克"
+  }
+]
