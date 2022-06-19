@@ -12,7 +12,7 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/changeable-table-column-width',
     name: 'ChangeableTableColumnWidth',
-    component: () => import('@/views/sample/ChangeableTableColumnWidth.vue'),
+    component: () => import('@/views/ChangeableTableColumnWidth.vue'),
   },
 ]
 

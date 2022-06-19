@@ -35,6 +35,7 @@ function handleTransfer(routeName: string): void {
   <div class="catalog">
     <BaseButton
       v-for="item in serviceList"
+      class="button"
       :key="item.title"
       :title="item.title"
       @click="() => handleTransfer(item.routeName)"
@@ -47,5 +48,9 @@ function handleTransfer(routeName: string): void {
   display: flex;
   flex-direction: column;
   width: 30%;
+}
+
+.button {
+  margin: 0 0 0.7rem;
 }
 </style>

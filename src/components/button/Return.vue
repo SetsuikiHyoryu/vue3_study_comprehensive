@@ -8,10 +8,12 @@ import type { Router } from 'vue-router'
 import { useRouter } from 'vue-router'
 
 interface Props {
-  target: string
+  target?: string
 }
 
-const props = defineProps<Props>()
+const props = withDefaults(defineProps<Props>(), {
+  target: 'Catalog',
+})
 
 const router: Router = useRouter()
 
@@ -21,7 +23,7 @@ function handleReturn(): void {
 </script>
 
 <template>
-  <a class="return-button" @click="handleReturn">く 戻る </a>
+  <a class="return-button" @click="handleReturn">く 返回 </a>
 </template>
 
 <style scoped>
