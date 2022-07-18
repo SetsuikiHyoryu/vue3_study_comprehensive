@@ -16,6 +16,13 @@ export default defineConfig({
         changeOrigin: true,
         rewrite: (path: string): string => path.replace(/^\/api/, ''),
       },
+
+      '/dotnet-api': {
+        target: 'https://localhost:7271',
+        secure: false,
+        changeOrigin: true,
+        rewrite: (path: string): string => path.replace(/^\/dotnet-api/, ''),
+      },
     },
   },
 })

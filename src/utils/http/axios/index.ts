@@ -1,6 +1,8 @@
+import type { AxiosInstance } from 'axios'
+
 import axios from 'axios'
 
-const axiosInstance = axios.create({
+const axiosInstance: AxiosInstance = axios.create({
   baseURL: 'http://localhost:3000/api',
   timeout: 1000,
 })
@@ -18,7 +20,12 @@ export const sendRequest = async (
   return data.data
 }
 
-export const localHTTP = axios.create({
+export const localHTTP: AxiosInstance = axios.create({
   baseURL: '/data',
+  timeout: 1000,
+})
+
+export const dotnetHTTP: AxiosInstance = axios.create({
+  baseURL: 'http://localhost:3000/dotnet-api',
   timeout: 1000,
 })

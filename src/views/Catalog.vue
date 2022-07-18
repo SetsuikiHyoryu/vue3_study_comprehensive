@@ -22,6 +22,11 @@ const serviceList: Service[] = [
     title: '实时可变表格列宽',
     routeName: 'ChangeableTableColumnWidth',
   },
+
+  {
+    title: '格式化嵌套数据',
+    routeName: 'FormatNest',
+  },
 ]
 
 const router = useRouter()

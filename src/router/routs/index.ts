@@ -14,6 +14,12 @@ const routes: RouteRecordRaw[] = [
     name: 'ChangeableTableColumnWidth',
     component: () => import('@/views/ChangeableTableColumnWidth.vue'),
   },
+
+  {
+    path: '/format-nest',
+    name: 'FormatNest',
+    component: () => import('@/views/sample/FormatNest.vue'),
+  },
 ]
 
 export default routes
