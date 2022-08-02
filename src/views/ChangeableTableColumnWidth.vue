@@ -5,8 +5,7 @@ export default { name: 'ChangeableTableColumnWidth' }
 <script setup lang="ts">
 import { queryCharacters } from '@/api/characters'
 import Return from '@/components/button/Return.vue'
-import { computed } from '@vue/reactivity'
-import { onBeforeMount, reactive, ref } from 'vue'
+import { onBeforeMount, reactive, ref, computed } from 'vue'
 
 // Data
 const tableHeads: string[] = ['代号', '生日', '身高', '出身地', '种族']
