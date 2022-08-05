@@ -1,6 +1,7 @@
-import { sendRequest } from '../utils/http/axios'
 import type { QueryWorksModel, WorkModel } from './model'
-import { QueryWorksParameters } from './model/works'
+import type { QueryWorksParameters } from './model/works'
+
+import { sendRequest } from '../utils/http/axios'
 
 export const queryWorks = async ({
   title,
@@ -13,7 +14,7 @@ export const queryWorks = async ({
         author
       }
     }
-  `
+ `
 
   const { works } = await sendRequest(query, { title, author })
 
