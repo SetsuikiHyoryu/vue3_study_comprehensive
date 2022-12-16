@@ -20,6 +20,12 @@ const routes: RouteRecordRaw[] = [
     name: 'FormatNest',
     component: () => import('@/views/sample/FormatNest.vue'),
   },
+
+  {
+    path: '/drop-down-with-blur-click',
+    name: 'DropDownWithBlurClick',
+    component: () => import('@/views/DropDownWithBlurClick.vue'),
+  },
 ]
 
 export default routes

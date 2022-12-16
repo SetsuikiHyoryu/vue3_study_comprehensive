@@ -1,5 +1,13 @@
 # 前后端综合学习客戸端仓库
 
-## 学习记录
+## 安装依赖
 
-[使用 axios 和 Apollo 学习 GraphQL](https://setsuikihyoryu.github.io/programming/front-back-connect/graphql/axios-apollo-graphql.html)
+```shell
+npm install
+```
+
+## 启动服务
+
+```shell
+npm run serve
+```

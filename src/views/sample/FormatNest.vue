@@ -6,10 +6,12 @@ export default { name: 'FormatNest' }
 import Return from '@/components/button/Return.vue'
 import BaseButton from '@/components/button/BaseButton.vue'
 
+import type { AxiosRequestConfig } from 'axios'
+
 import { dotnetHTTP } from '@/utils/http/axios'
 
 async function handleClick(): Promise<void> {
-  const { data } = await dotnetHTTP({
+  const { data } = await dotnetHTTP(<AxiosRequestConfig<any>>{
     url: '/weatherforecast',
     methods: 'GET',
   })

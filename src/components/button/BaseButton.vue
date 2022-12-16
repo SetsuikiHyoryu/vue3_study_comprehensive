@@ -1,14 +1,7 @@
 <script lang="ts" setup>
-interface Props {
+defineProps<{
   title: string
-  width?: string
-  height?: string
-}
-
-withDefaults(defineProps<Props>(), {
-  width: '100%',
-  height: '100%',
-})
+}>()
 
 interface Emits {
   (event: 'click'): void
@@ -24,9 +17,8 @@ const emit = defineEmits<Emits>()
 <style scoped>
 button {
   padding: 0.3rem 1rem;
-  font-size: 1.3rem;
-  height: v-bind('height');
-  min-width: 13rem;
-  width: v-bind('width');
+  font-size: 18px;
+  min-width: 30%;
+  max-width: 50%;
 }
 </style>

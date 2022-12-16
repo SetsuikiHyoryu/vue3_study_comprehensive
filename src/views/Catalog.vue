@@ -13,20 +13,10 @@ interface Service {
 }
 
 const serviceList: Service[] = [
-  {
-    title: 'GraphQL 前后端连接',
-    routeName: 'ConnectWithGraphQL',
-  },
-
-  {
-    title: '实时可变表格列宽',
-    routeName: 'ChangeableTableColumnWidth',
-  },
-
-  {
-    title: '格式化嵌套数据',
-    routeName: 'FormatNest',
-  },
+  { title: 'GraphQL 前后端连接', routeName: 'ConnectWithGraphQL' },
+  { title: '实时可变表格列宽', routeName: 'ChangeableTableColumnWidth' },
+  { title: '格式化嵌套数据', routeName: 'FormatNest' },
+  { title: '自定义下拉菜单的 blur 与 click', routeName: 'DropDownWithBlurClick' },
 ]
 
 const router = useRouter()
@@ -52,7 +42,6 @@ function handleTransfer(routeName: string): void {
 .catalog {
   display: flex;
   flex-direction: column;
-  width: 30%;
 }
 
 .button {
