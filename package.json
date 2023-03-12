@@ -12,6 +12,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "typescript-vue-plugin": "^1.2.0",
     "vue": "^3.2.47"
   },
   "devDependencies": {
