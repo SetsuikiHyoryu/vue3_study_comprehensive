@@ -1,6 +1,8 @@
 <script setup lang="ts">
-import UserInfoInput from '@/features/user-info/components/UserInfoInput.vue'
-import { useUserInfo } from '@/features/user-info/compositions'
+import UserInfoInput from '@/features/user-info-v-model-chain/components/UserInfoInput.vue'
+
+import { useUserInfo } from '@/features/user-info-v-model-chain/compositions'
+
 const { familyName, givenName, fullname } = useUserInfo()
 </script>
 
