@@ -1,10 +1,6 @@
 import { createApp } from 'vue'
-import { bootRouter } from './router'
 import App from './App.vue'
-import 'default-passive-events'
 
-const app = createApp(App)
+import './assets/main.css'
 
-bootRouter(app)
-
-app.mount('#app')
+createApp(App).mount('#app')
